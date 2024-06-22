@@ -1,0 +1,18 @@
+{% extends '../layouts/base.html' %}
+
+{% block content %}
+
+<h1>Project detail</h1>
+<h2>{{ project }}</h2>
+
+{% for task in tasks %}
+
+<div>
+    <h6>{{task.title}}</h6>
+</div>
+
+{% endfor %}
+
+<a href="{% url 'projects' %}">VOLVER</a>
+
+{% endblock %}
